@@ -130,6 +130,10 @@ PAGE: PORTFOLIO
   color: #bdc3c7
 }
 
+/* #gallery li a img {
+  padding-left: 4px;
+} */
+
 
 
 /*****************************************
@@ -200,7 +204,7 @@ nav {
   background: #599a68;
 }
 
-/* logo text */ 
+/* logo text */
 h1, h2 {
   color: #fff;
 }
