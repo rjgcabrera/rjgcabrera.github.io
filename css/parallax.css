@@ -27,7 +27,7 @@
     -webkit-transform: translateZ(-1px) scale(2);
     transform: translateZ(-1px) scale(2);
     background-image: url("../img/bay-bridge-b&w.jpg");
-    /* width: 100vw; */
+    width: 100vw;
   }
 
 

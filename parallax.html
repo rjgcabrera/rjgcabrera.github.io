@@ -12,8 +12,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/jquery.circular-carousel.js"></script>
     <header>
       <a href="index.html" id="logo">
         <h1>Raymond Cabrera</h1>
@@ -42,20 +40,63 @@
         </div> -->
         <div class="parallax">
           <div class="parallax__layer parallax__layer--back">
-            <div class="title">This is the background</div>
+            <!-- <div class="title">This is the background</div> -->
           </div>
           <div class="parallax__layer parallax__layer--base">
             <div id="home-div">
               <img alt="Raymond Cabrera.jpg" data-type="image" src="img/Raymond Cabrera.jpg" id="profile-pic">
               <div>
                 <h2>Raymond Cabrera</h2>
+                <h1>Full Stack</h1>
                 <h1>Web Dev.</h1>
-                <h1>Musician.</h1>
               </div>
             </div>
-            <div id="about-div">about</div>
-            <div id="portfolio-div">portfolio</div>
-            <div id="contact-div">contact</div>
+            <div id="about-div">
+              <h1>About</h1>
+              <p>I am a Full Stack Software Engineer and Musician who loves to utilize creativity for the benefit of others. I have built web apps both from scratch as well as building upon legacy codebases, and I have scaled these to handle production-level web traffic. Decorating time and space with either software or musical patterns has always been enjoyable, and I am seeking out teams that share the same passion for the art of software.</p><br>
+
+              <!-- <p>Skills:
+
+              React.js, AngularJS, Backbone.js, Node.js, Express.js, JavaScript, HTML, CSS, jQuery, Redux, Python, Bash, Linux/UNIX, Java, C++, Docker, Heroku, Artillery, New Relic, AWS, Jest, Enzyme, Mocha.js, Chai.js, Webpack, MySQL, PostgreSQL, MongoDB, Redis, React Router, Flexbox, Grid</p> -->
+            </div>
+            <div id="portfolio-div">
+              <h1>Portfolio</h1>
+              <h2>Skills</h2>
+              <!-- change inline style -->
+              <div class="row" style="height: 200px;">
+                <ul class="carousel">
+                  <li class="item active">
+                    <img src="img/rj.jpg" alt="Photo of RJ" class="profile-photo">
+                  </li>
+                  <li class="item">
+                    <img src="img/rj.jpg" alt="Photo of RJ" class="profile-photo">
+                  </li>
+                  <li class="item">
+                    <img src="img/rj.jpg" alt="Photo of RJ" class="profile-photo">
+                  </li>
+                  <li class="item">
+                    <img src="img/rj.jpg" alt="Photo of RJ" class="profile-photo">
+                  </li>
+                  <li class="item">
+                    <img src="img/rj.jpg" alt="Photo of RJ" class="profile-photo">
+                  </li>
+                  <li class="item">
+                    <img src="img/rj.jpg" alt="Photo of RJ" class="profile-photo">
+                  </li>
+                  <li class="item">
+                    <img src="img/rj.jpg" alt="Photo of RJ" class="profile-photo">
+                  </li>
+                </ul>
+              </div>
+              <div class="controls">
+               <a href="#" class="previous"><</a>
+               <a href="#" class="next">></a>
+              </div>
+              <h2>Projects</h2>
+            </div>
+            <div id="contact-div">
+              <h1>Contact</h1>
+            </div>
 
             <!-- <div style="margin:0 auto; width:50px; height:50px; background-color:#fff;"></div> -->
 
@@ -69,6 +110,8 @@
         <p>&copy; 2018 Raymond Cabrera</p>
       </footer> -->
     <!-- </div> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/jquery.circular-carousel.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>

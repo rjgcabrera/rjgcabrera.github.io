@@ -1,3 +1,21 @@
+.row {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-self: center;
+	width: 875px;
+}
+
+.carousel {
+	/* left: 50%; */
+	position: relative;
+	width: 100vw;
+	/* margin-left: -50%; */
+	overflow: hidden;
+	height: 300px;
+	top: -10rem;
+}
+
 .carousel .item {
 	display: block;
 	position: absolute;
@@ -20,3 +38,60 @@
 	-o-transition: all 0.35s ease;
     transition: all 0.35s ease;
 }
+
+.controls a {
+	display: flex;
+	flex-direction: row;
+	font-size: 75%;
+}
+
+.controls .previous {
+	align-self: flex-start;
+}
+
+.controls .next {
+	align-self: flex-end;
+}
+/* .row {
+	text-align: center;
+}
+
+.carousel {
+	left: 50%;
+	position: absolute;
+	width: 1000px;
+	margin-left: -500px;
+	overflow: hidden;
+	height: 500px;
+	top: 50px;
+}
+
+.carousel .item {
+	width: 350px;
+	height: 250px;
+	background: url('http://placehold.it/350x250') top left no-repeat;
+	background-size: 100%;
+	vertical-align: middle;
+	line-height: 150px;
+	box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.controls {
+	position: absolute;
+	top: 500px;
+	left: 50%;
+	width: 150px;
+	margin-left: -75px;
+}
+
+.controls a {
+	display: block;
+}
+
+.controls .previous {
+	float: left;
+}
+
+.controls .next {
+	float: right;
+} */
