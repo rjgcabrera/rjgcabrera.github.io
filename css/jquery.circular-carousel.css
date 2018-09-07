@@ -42,7 +42,7 @@
 .controls a {
 	display: flex;
 	flex-direction: row;
-	font-size: 75%;
+	font-size: 150%;
 }
 
 .controls .previous {

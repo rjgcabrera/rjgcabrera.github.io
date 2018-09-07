@@ -135,7 +135,7 @@ PAGE: PORTFOLIO
 }
 
 #gallery li a img {
-  opacity: 0.6;
+  opacity: 0.65;
 }
 
 #gallery li a img:hover {
@@ -285,12 +285,55 @@ nav a.selected, nav a:hover {
   color: #fff;
 }
 
-#about-div p {
-  font-size: 75%;
+#about-div p, #gallery {
+  font-size: 70%;
   color: #fff;
   max-width: 80%;
 }
 
 #portfolio-div, #contact-div {
   background-color: #fff;
+}
+
+.controls {
+  /* border: dashed red; */
+  width: 100vw;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-around;
+}
+
+.controls a {
+  margin: auto 0;
+  /* font-size: 150%; */
+}
+
+#gallery li {
+  border-radius: 1rem;
+}
+
+#portfolio-div h2 {
+  padding-bottom: 0.5rem;
+  border-bottom: solid #007B9A;
+}
+
+#portfolio-div iframe {
+  opacity: 0.65;
+  max-width: 100%;
+}
+/* #portfolio-div iframe {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+} */
+
+#portfolio-div iframe:hover {
+  opacity: 1;
+}
+
+/* #contact-div {
+  display:flex;
+} */
+
+footer, #primary, #secondary {
+  font-size: 50%;
 }
