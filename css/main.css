@@ -182,6 +182,10 @@ PAGE: CONTACT
   margin: 0 0 10px;
 }
 
+.contact-info li.github a {
+  background-image: url('../img/github.ico');
+}
+
 .contact-info li.phone a {
   background-image: url('../img/phone.png');
 }
