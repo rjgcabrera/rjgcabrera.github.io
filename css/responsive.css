@@ -70,8 +70,8 @@
 
   header {
     border-bottom: 5px solid #003D4D;
-    margin-bottom: 60px;
-    height: 11vh;
+    /* margin-bottom: 60px; */
+    min-height: 95px;
   }
 
 }
