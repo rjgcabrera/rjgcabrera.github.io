@@ -3,11 +3,13 @@
   --------------------------------------------- */
 
   .parallax {
-    height: 100vh;
+    height: 88vh;
     overflow-x: hidden;
     overflow-y: auto;
     -webkit-perspective: 1px;
     perspective: 1px;
+    position: relative;
+    top: 12vh;
   }
 
   .parallax__layer {
