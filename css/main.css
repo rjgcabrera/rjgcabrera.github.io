@@ -199,6 +199,9 @@ PAGE: CONTACT
   background-image: url('../img/twitter.png');
 }
 
+#contact-info {
+  width: 80%
+}
 
 
 /*****************************************

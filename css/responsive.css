@@ -10,6 +10,25 @@
   nav a {
     padding: 15px 10px;
   }
+
+  /* #contact-info {
+    width: 80%;
+  } */
+}
+
+@media screen and (max-width: 479px) {
+  #primary {
+    text-align: center;
+  }
+
+  #secondary {
+    text-align: center;
+  }
+
+  #secondary ul {
+    width: 50%;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -24,7 +43,7 @@
   }
 
   #secondary {
-    width: 30%;
+    /* width: 30%; */
     float: right;
   }
 
@@ -87,6 +106,15 @@
     border-bottom: 5px solid #003D4D;
     min-height: 95px;
   }
+
+  /* #contact-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    width: 80%;
+  } */
+
 
 }
 
