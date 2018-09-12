@@ -55,6 +55,33 @@
 			e.preventDefault();
 		});
 
+    /*Scroll to #about-div*/
+    $('a[href=#about-div]').click(function(e) {
+        e.preventDefault();
+        console.log('scrolling to about-div');
+        $('html, body, .parallax').animate({
+            scrollTop:  $("#about-div").position().top
+        }, 1000);
+    });
+
+    /*Scroll to #portfolio*/
+    $('a[href=#portfolio]').click(function(e) {
+        e.preventDefault();
+        console.log('scrolling to portfolio');
+        $('html, body, .parallax').animate({
+            scrollTop:  $("#portfolio").position().top
+        }, 1000);
+    });
+
+    /*Scroll to #contact-div*/
+    $('a[href=#contact-div]').click(function(e) {
+        e.preventDefault();
+        console.log('scrolling to contact-div');
+        $('html, body, .parallax').animate({
+            scrollTop:  $("#contact-div").position().top
+        }, 1000);
+    });
+
 	});
 
 })();
