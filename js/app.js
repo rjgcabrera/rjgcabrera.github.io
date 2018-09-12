@@ -55,33 +55,64 @@
 			e.preventDefault();
 		});
 
+    var aboutDivPos = $("#about-div").position().top;
+    var portfolioDivPos = $("#portfolio").position().top;
+    var contactDivPos = $("#contact-div").position().top;
+    var $aboutNavLink = $('a[href=#about-div]');
+    var $portfolioNavLink = $('a[href=#portfolio]');
+    var $contactNavLink = $('a[href=#contact-div]');
+
+
     /*Scroll to #about-div*/
-    $('a[href=#about-div]').click(function(e) {
+    $aboutNavLink.click(function(e) {
         e.preventDefault();
-        console.log('scrolling to about-div');
+        // console.log('scrolling to about-div');
         $('html, body, .parallax').animate({
-            scrollTop:  $("#about-div").position().top
+            scrollTop: aboutDivPos
         }, 1000);
     });
 
     /*Scroll to #portfolio*/
-    $('a[href=#portfolio]').click(function(e) {
+    $portfolioNavLink.click(function(e) {
         e.preventDefault();
-        console.log('scrolling to portfolio');
+        // console.log('scrolling to portfolio');
         $('html, body, .parallax').animate({
-            scrollTop:  $("#portfolio").position().top
+            scrollTop: portfolioDivPos
         }, 1000);
     });
 
     /*Scroll to #contact-div*/
-    $('a[href=#contact-div]').click(function(e) {
+    $contactNavLink.click(function(e) {
         e.preventDefault();
-        console.log('scrolling to contact-div');
+        // console.log('scrolling to contact-div');
         $('html, body, .parallax').animate({
-            scrollTop:  $("#contact-div").position().top
+            scrollTop: contactDivPos
         }, 1000);
     });
 
+    /*Highlight nav link when client is viewing div*/
+    var parallax = document.querySelector('.parallax');
+
+    parallax.addEventListener('scroll', () => {
+      if (parallax.scrollHeight - parallax.scrollTop === parallax.clientHeight) {
+        $aboutNavLink.removeClass('selected');
+        $portfolioNavLink.removeClass('selected');
+        $contactNavLink.addClass('selected');
+      } else if (parallax.scrollTop >= aboutDivPos && parallax.scrollTop < portfolioDivPos) {
+        $aboutNavLink.addClass('selected');
+        $portfolioNavLink.removeClass('selected');
+        $contactNavLink.removeClass('selected');
+      } else if (parallax.scrollTop >= portfolioDivPos && parallax.scrollTop < contactDivPos) {
+        $aboutNavLink.removeClass('selected');
+        $portfolioNavLink.addClass('selected');
+        $contactNavLink.removeClass('selected');
+      } else if (parallax.scrollTop < aboutDivPos) {
+        $aboutNavLink.removeClass('selected');
+        $portfolioNavLink.removeClass('selected');
+        $contactNavLink.removeClass('selected');
+      }
+
+    });
 	});
 
 })();
